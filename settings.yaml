@@ -1,0 +1,118 @@
+mysql:
+  host: 123.60.212.34
+  port: 3306
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db: gvb
+  user: gvb
+  password: jPzJePPpZF22AbES
+  log_level: dev
+logger:
+  level: info
+  prefix: '[gvb]'
+  director: log
+  show_line: true
+  log_in_console: true
+system:
+  host: 0.0.0.0
+  port: 8080
+  env: release
+site_info:
+  created_at: "2024-07-18"
+  bei_an: 豫ICP备2024079787
+  title: 小酒馆
+  qq_image: /uploads/file/admin/qq_20230930151442.png
+  version: 8.0.1
+  email: 1632590674@qq.com
+  wechat_image: /uploads/file/admin/wechat_20230930151521.png
+  name: 小酒馆
+  job: 后端开发
+  addr: 河南郑州
+  slogan: 笔记
+  slogan_en: BIJI
+  web: ""
+  bilibili_url: https://space.bilibili.com/3493295026080092
+  gitee_url: ""
+  github_url: https://github.com/availa5213132
+upload:
+  size: 2
+  path: uploads/file
+qq:
+  app_id: '******'
+  key: '******'
+  redirect: http://blog.junhx.top/login?flag=qq
+qi_niu:
+  enable: false
+  access_key: '******'
+  secret_key: '******'
+  bucket: xiaojiuguan
+  cdn: ""
+  zone: z2
+  prefix: "1001"
+  size: 6
+email:
+  host: smtp.qq.com
+  port: 465
+  user: 1632590674@qq.com
+  password: '******'
+  default_from_email: 小酒馆
+  use_ssl: true
+  user_tls: false
+jwt:
+  secret: '******'
+  expires: 100
+  issuer: "1234"
+redis:
+  ip: 123.60.212.34
+  port: 6379
+  password: ""
+  pool_size: 100
+es:
+  host: http://123.60.212.34
+  port: 9200
+  user: ""
+  password: ""
+  article_index: article_index
+  full_text_index: full_text_index
+chat_group:
+  isAnonymous: true
+  isShowTime: false
+  defaultLimit: 50
+  contentLength: 101
+  welcomeTitle: 小酒馆在线聊天室
+  isOnlinePeople: true
+  isSendImage: true
+  isSendFile: false
+  isMd: true
+gaode:
+  enable: true
+  key: '******'
+big-model:
+  setting:
+    name: qwen
+    enable: true
+    order: 4
+    api-key: sk-b7c4df89f219468aad38ac51b84e81c0
+    api-secret: ""
+    title: 小酒馆开业
+    prompt: 你是一个大预言模型
+    slogan: 让更多人用上大模型
+  model-list:
+  - label: 通义千问
+    value: qwen
+    disabled: false
+  - label: 文心一言
+    value: wenxin
+    disabled: true
+  - label: 星火大模型
+    value: xinghuo
+    disabled: true
+  - label: 天工大模型
+    value: tiangong
+    disabled: true
+  - label: ChatGPT
+    value: ChatGPT
+    disabled: true
+  session-setting:
+    chat-scope: 2
+    session-scope: 4
+    day-scope: 100
